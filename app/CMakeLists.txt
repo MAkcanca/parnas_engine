@@ -5,3 +5,6 @@ set(CMAKE_CXX_STANDARD 20)
 
 # parnas_engine_application.exe
 add_executable(${PROJECT_NAME} src/main.cpp)
+
+target_link_libraries(${PROJECT_NAME} parnas_engine)
+target_include_directories(${PROJECT_NAME} PRIVATE parnas_engine)
