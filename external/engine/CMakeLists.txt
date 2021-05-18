@@ -7,7 +7,9 @@ set(CMAKE_CXX_STANDARD 20)
 add_subdirectory(external/glm)
 add_subdirectory(external/glfw)
 
-add_library(${PROJECT_NAME} src/Engine.cpp)
+file(GLOB SOURCES "src/*.cpp", "src/*/*.cpp", "src/*/*/*.cpp", "src/*/*/*/*.cpp")
+
+add_library(${PROJECT_NAME} ${SOURCES})
 
 target_include_directories(${PROJECT_NAME}
     PUBLIC

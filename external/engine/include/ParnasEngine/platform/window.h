@@ -2,6 +2,6 @@
 
 class Window
 {
-    virtual void OpenWindow();
-    virtual void Update();
-}
+    virtual void OpenWindow() = 0;
+    virtual bool Update() = 0;
+};

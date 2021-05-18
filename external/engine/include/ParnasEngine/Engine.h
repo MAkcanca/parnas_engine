@@ -2,5 +2,5 @@
 
 struct ParnasEngine
 {
-    static void PrintHelloWorld();
+    static void Init();
 };
