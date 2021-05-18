@@ -5,7 +5,7 @@
 class ServiceLocator
 {
 public:
-    static inline const std::unique_ptr<Window> &GetWindow() { return _window }
+    static inline const std::unique_ptr<Window> &GetWindow() { return _window; };
     static inline void Provide(Window *window)
     {
         if (_window != nullptr)
